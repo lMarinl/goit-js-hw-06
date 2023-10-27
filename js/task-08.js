@@ -9,7 +9,8 @@ function handlerSubmitForms (event) {
   const password = loginForm.elements.password.value
 
   if (password === '' || email === '') {
-    alert("Please fill in all the fields!");
+    
+   return  alert("Please fill in all the fields!");
   }
   else {
     const formData = {
@@ -20,5 +21,6 @@ function handlerSubmitForms (event) {
   }
   
   
-    loginForm.reset();
+  loginForm.reset();
+  
 }

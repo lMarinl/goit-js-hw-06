@@ -4,6 +4,10 @@ const spanName = document.getElementById('text');
 
 inputName.addEventListener('input', fontSizeControl)
 
-function fontSizeControl () {
+spanName.style.fontSize = `${inputName.value}px`;
+
+function fontSizeControl() {
+  
   spanName.style.fontSize = `${inputName.value}px`
 }
+
